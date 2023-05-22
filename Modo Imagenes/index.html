@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+    <meta charset="utf-8" />
+    <script
+      type="text/javascript"
+      src="../JSONS-Scripts/coloris.min.js"
+      defer
+    ></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../JSONS-Scripts/coloris.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js/p5.quadrille.min.js"></script>
+    <title>Dino Art</title>
+  </head>
+  <body>
+    <main>
+      <div id="titulo">
+        <a href="../Menu/menu.html">Dino Art</a>
+      </div>
+      <div id="contenedor">
+        <div id="canva"></div>
+        <div>
+          <div>
+            <label id="label" for="checkbox-id">
+              <input type="checkbox" id="checkbox-id" name="checkbox-id" />
+              <span>Ocultar Grid</span>
+            </label>
+          </div>
+          <div id="colorpicker" class="example full">
+            <p>Color Picker</p>
+            <input type="text" class="coloris instance3" value="#fcfcfc" />
+          </div>
+          <a href="submit.html" onclick="submit()" class="eightbit-btn"
+            >Submit</a
+          >
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

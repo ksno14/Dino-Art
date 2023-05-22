@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <meta charset="utf-8" />
+    <script src="submit.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="submit.css" />
+    <script src="https://cdn.jsdelivr.net/gh/objetos/p5.quadrille.js/p5.quadrille.min.js"></script>
+    <title>Dino Art</title>
+  </head>
+  <body>
+    <main>
+      <div id="titulo">
+        <a href="../Menu/menu.html">Dino Art</a>
+      </div>
+      <div class="secciones">
+        <section>
+          <h4 id="h4_1">Imagen de Referencia</h4>
+          <div id="canva_ref"></div>
+        </section>
+        <section>
+          <h4 id="fallos"></h4>
+          <h4 id="score"></h4>
+          <label id="label" for="checkbox-id">
+            <input type="checkbox" id="checkbox-id" name="checkbox-id" />
+            <span>Ocultar Grid</span>
+          </label>
+          <div class="botones">
+            <a href="..\Menu\menu.html" class="eightbit-btn">Menu</a
+            ><br /><br />
+            <a href="..\Modo Imagenes\selector.html" class="eightbit-btn"
+              >Volver a jugar</a
+            >
+          </div>
+        </section>
+        <section>
+          <h4 id="h4_3">Tu imagen</h4>
+          <div id="canva_player"></div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
