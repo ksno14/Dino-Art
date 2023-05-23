@@ -53,9 +53,7 @@ function hexArray(originalArray) {
   const hexa = (str) => "#" + str;
   const finalArray = originalArray.map((element) => {
     if (typeof element === "object" && element.hasOwnProperty("levels")) {
-      const hexstr = element.levels
-        .map((level) => hex(level))
-        .join("");
+      const hexstr = element.levels.map((level) => hex(level)).join("");
       return hexa(hexstr);
     } else if (typeof element === "number" && element === 255) {
       return "#FFFFFF";

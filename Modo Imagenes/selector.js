@@ -11,13 +11,13 @@ var seconds;
 var filas;
 var keys;
 var keyAleatoria;
-var clickempezar=false;
+var clickempezar = false;
 
 function empezar(link) {
   cuentaAtras();
   link.removeEventListener("click", empezar);
   link.style.pointerEvents = "none";
-  clickempezar=true;
+  clickempezar = true;
   reemplazarLink();
 }
 
@@ -58,11 +58,10 @@ function setup() {
 function draw() {
   quadrille = createQuadrille(filas, imagen);
   clickempezar
-  ? checkbox.checked
-    ? drawQuadrille(quadrille, { outlineWeight: 0 })
-    : drawQuadrille(quadrille)
-  : null;
-    
+    ? checkbox.checked
+      ? drawQuadrille(quadrille, { outlineWeight: 0 })
+      : drawQuadrille(quadrille)
+    : null;
 }
 
 function cuentaAtras() {
