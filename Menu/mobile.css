@@ -1,0 +1,53 @@
+@font-face {
+    font-family: pixel;
+    src: url("../Imagenes-Fuentes/PressStart2P-Regular.ttf");
+}
+
+html {
+    height: 100%;
+}
+
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #ead13e;
+  background-image: linear-gradient(0deg, #ead13e 0%, #D9AFD9 11%, #97D9E1 17%, #f1f1f1 39%);
+  font-family: pixel , sans-serif;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:60px;
+    margin-bottom:80px;
+}
+
+#parrafo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 20px;
+}
+
+
+#contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    margin-top:50px;
+}

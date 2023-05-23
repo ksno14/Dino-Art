@@ -26,6 +26,10 @@
             <a href="..\Modos de Juego\modos.html" class="eightbit-btn">Jugar</a
             ><br /><br /><br /><br />
 
+            <a href="controles.html" class="eightbit-btn eightbit-btn--proceed"
+              >Controles</a> <br><br><br><br>
+            
+
             <a href="creditos.html" class="eightbit-btn eightbit-btn--proceed"
               >Creditos</a
             >
@@ -36,9 +40,14 @@
         </div>
       </div>
       <div id="Nota">
-        Nota:Puedes clickear el titulo en cualquier momento para volver a este
+        Tip:Puedes clickear el titulo en cualquier momento para volver a este
         menu :D
       </div>
     </main>
+    <script>
+      if (/Mobi/.test(navigator.userAgent)) {
+        window.location.href = "mobile.html";
+      }
+    </script>
   </body>
 </html>
