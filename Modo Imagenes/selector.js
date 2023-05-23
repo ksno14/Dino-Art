@@ -20,7 +20,7 @@ function empezar(link) {
 }
   
 function preload(){
-    imagenes=loadJSON("../JSONs-Scripts/imagenes.json")
+    imagenes=loadJSON("../JSONS-Scripts/imagenes.json")
 }
 
 function setup() {

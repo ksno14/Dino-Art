@@ -6,7 +6,7 @@ var mapaColor;
 var diferencias = 0;
 
 function preload() {
-  imagenes = loadJSON("../../JSONs-Scripts/imagenes.json");
+  imagenes = loadJSON("../JSONS-Scripts/imagenes.json");
 }
 
 var canvas1 = new p5(function (p1) {

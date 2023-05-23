@@ -15,8 +15,8 @@ document.addEventListener("coloris:pick", (event) => {
 });
 
 function preload() {
-  dino = loadImage("../../../Imagenes-Fuentes/Dino_Azul.png");
-  mapas = loadJSON("../../../JSONS-Scripts/mapas.json");
+  dino = loadImage("../Imagenes-Fuentes/Dino_Azul.png");
+  mapas = loadJSON("../JSONS-Scripts/mapas.json");
 }
 
 function setup() {
