@@ -6,6 +6,7 @@ var cuadradoColumnas;
 var elementosFaltantes;
 var queue = [];
 var accion = false;
+var columnasAnteriores = 0;
 
 document.addEventListener("coloris:pick", (event) => {
   nuevocolor = event.detail.color;
@@ -51,6 +52,8 @@ function updateValue() {
   }
   x = cuadrados * columnas;
   resizeCanvas(x, x);
+  mapaDino[mapaDino.indexOf(dino)]=null
+  mapaDino[0]=dino
 }
 
 function draw() {

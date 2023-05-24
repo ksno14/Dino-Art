@@ -3,6 +3,7 @@ var checkbox = document.querySelector("#checkbox-id");
 var linkEmpezar = document.getElementById("linkEmpezar");
 var timerDisplay = document.getElementById("timerDisplay");
 var modoh2 = document.getElementById("modoh2");
+var p_explicacion = document.getElementById("p_explicacion");
 var imagenes;
 var imagenjson;
 var imagen;
@@ -47,6 +48,7 @@ function setup() {
     modoh2.textContent = "Modo Dificil";
     seconds = 90;
   }
+  p_explicacion.textContent=`En este modo tendras ${seconds} segundos para observar la imagen, luego tendras que replicarla en un lienzo en blanco.`
   var arrayString = JSON.stringify(imagenjson);
   localStorage.setItem("imagenjson", arrayString);
   Quadrille.CELL_LENGTH = Math.sqrt(230400 / imagenjson.length);
