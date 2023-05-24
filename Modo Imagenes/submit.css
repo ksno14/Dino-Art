@@ -24,10 +24,18 @@ html {
 }
 
 body {
-  width: 100%;
-  height: 100%;
-  background-color: rgb(158, 157, 156);
-  font-family: pixel;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #ead13e;
+  background-image: linear-gradient(
+    0deg,
+    #ead13e 0%,
+    #d9afd9 11%,
+    #97d9e1 17%,
+    #f1f1f1 39%
+  );
+  font-family: pixel, sans-serif;
 }
 
 .secciones {
@@ -185,4 +193,12 @@ a:nth-of-type(3):focus {
 }
 a:nth-of-type(3):active {
   box-shadow: inset 4px 4px 0px 0px #a52e2e;
+}
+
+#checkbox-id {
+  z-index: 1;
+}
+
+#player {
+  z-index: -1;
 }

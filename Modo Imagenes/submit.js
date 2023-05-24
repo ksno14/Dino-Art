@@ -49,8 +49,13 @@ var canvas2 = new p5(function (p2) {
 });
 
 function hexArray(originalArray) {
-  const hex = (num) => num.toString(16);
+  const hex = (num) => {
+    const hexString = num.toString(16);
+    return hexString.length === 1 ? "0" + hexString : hexString;
+  };
+
   const hexa = (str) => "#" + str;
+
   const finalArray = originalArray.map((element) => {
     if (typeof element === "object" && element.hasOwnProperty("levels")) {
       const hexstr = element.levels.map((level) => hex(level)).join("");

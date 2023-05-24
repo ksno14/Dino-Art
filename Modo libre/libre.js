@@ -135,7 +135,6 @@ function handlequeue() {
 }
 
 function exportPNG() {
-  console.log("hola");
   drawQuadrille(quadrilleColor, { outlineWeight: 0 });
   save(canva, "myCanvas.png");
 }
