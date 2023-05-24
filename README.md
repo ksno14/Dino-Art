@@ -2,12 +2,15 @@
 
 Dino Art es un juego grid based escrito en Javascript, en el cual se presentan diferentes modos de juego donde podras dibujar, entretenerte e incluso realizar y exportar pixelarts.
 
+<br><br>
+
 <p align="center">
-  <img src="https://ksnodev.github.io/Dino-Art/Imagenes-Fuentes/Dino_Verde.png" alt="Imagen 1"style="margin-right: 40px;"/> <img src="https://ksnodev.github.io/Dino-Art/Imagenes-Fuentes/Dino_Rojo.png" alt="Imagen 2"style="margin-right: 40px;"/> <img src="https://ksnodev.github.io/Dino-Art/Imagenes-Fuentes/Dino_Azul.png" alt="Imagen 3"style="margin-right: 40px;"/> <img src="https://ksnodev.github.io/Dino-Art/Imagenes-Fuentes/Dino_Amarillo.png" alt="Imagen 4"/>
+  <img src="https://ksnodev.github.io/Dino-Art/Imagenes-Fuentes/Dino_Verde.png" alt="Imagen 1"style="margin-right: 40px;"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://ksnodev.github.io/Dino-Art/Imagenes-Fuentes/Dino_Rojo.png" alt="Imagen 2"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://ksnodev.github.io/Dino-Art/Imagenes-Fuentes/Dino_Azul.png" alt="Imagen 3"style="margin-right: 40px;"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://ksnodev.github.io/Dino-Art/Imagenes-Fuentes/Dino_Amarillo.png" alt="Imagen 4"/>
 </p>
 
-<br>
-##Dependencias
+<br><br>
+
+## Dependencias
 
 - p5.quadrille.js: https://github.com/objetos/p5.quadrille.js
 - p5.js: https://github.com/processing/p5.js
@@ -15,13 +18,14 @@ Dino Art es un juego grid based escrito en Javascript, en el cual se presentan d
 
 <br>
 
-##Assets
+## Assets
 
 - Dino Characters: https://arks.itch.io/dino-characters
 
 <br>
 
-##Pixel Arts
+## Pixel Arts
+
 6X6
 
 - Oveja: https://www.pinterest.com.mx/ramseylvr/
