@@ -31,29 +31,44 @@ function setup() {
 
 function updateValue() {
   columnas = parseInt(document.querySelector("#columnas").value);
-  if (columnas <= 0 || isNaN(columnas)) {
-    columnas = 1;
+  if (columnas <= 6 || isNaN(columnas)) {
+    columnas = 6;
+    document.querySelector("#columnas").value = 6;
   }
-  if (columnas > 40) {
-    columnas = 40;
+  if (columnas > 16) {
+    columnas = 16;
+    document.querySelector("#columnas").value = 16;
   }
   cuadradoColumnas = columnas * columnas;
   elementosFaltantes = columnas * columnas - mapaColor.length;
-  for (var i = 0; i < elementosFaltantes; i++) {
-    mapaColor.push(255);
-    mapaDino.push(null);
+  console.log(elementosFaltantes);
+  if (elementosFaltantes < mapaColor.length) {
+    for (var i = 0; i < elementosFaltantes; i++) {
+      mapaColor.push(255);
+      mapaDino.push(null);
+    }
   }
+
+  if (elementosFaltantes < 0) {
+    for (var i = 0; i < -elementosFaltantes; i++) {
+      mapaColor.pop();
+      mapaDino.pop();
+    }
+  }
+
   cuadrados = parseInt(document.querySelector("#cuadrados").value);
-  if (cuadrados < 15 || isNaN(cuadrados)) {
-    cuadrados = 15;
+  if (cuadrados < 30 || isNaN(cuadrados)) {
+    cuadrados = 30;
+    document.querySelector("#cuadrados").value = 30;
   }
-  if (cuadrados > 100) {
-    cuadrados = 100;
+  if (cuadrados > 80) {
+    cuadrados = 80;
+    document.querySelector("#cuadrados").value = 80;
   }
   x = cuadrados * columnas;
   resizeCanvas(x, x);
-  mapaDino[mapaDino.indexOf(dino)]=null
-  mapaDino[0]=dino
+  mapaDino[mapaDino.indexOf(dino)] = null;
+  mapaDino[0] = dino;
 }
 
 function draw() {
@@ -93,6 +108,9 @@ function handlequeue() {
 
     if (key == "s") {
       nuevaposicion = posicion + Math.sqrt(mapaColor.length);
+      console.log(posicion);
+      console.log(mapaColor.length);
+      console.log(nuevaposicion);
       if (nuevaposicion >= mapaColor.length) {
         aux =
           posicion -
