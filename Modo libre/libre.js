@@ -8,6 +8,9 @@ var queue = [];
 var accion = false;
 var columnasAnteriores = 0;
 
+document.querySelector("#columnas").addEventListener("keydown", e => e.preventDefault());
+document.querySelector("#cuadrados").addEventListener("keydown", e => e.preventDefault());
+
 document.addEventListener("coloris:pick", (event) => {
   nuevocolor = event.detail.color;
 });
