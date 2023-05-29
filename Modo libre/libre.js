@@ -41,7 +41,6 @@ function updateValue() {
   }
   cuadradoColumnas = columnas * columnas;
   elementosFaltantes = columnas * columnas - mapaColor.length;
-  console.log(elementosFaltantes);
   if (elementosFaltantes < mapaColor.length) {
     for (var i = 0; i < elementosFaltantes; i++) {
       mapaColor.push(255);
@@ -108,9 +107,6 @@ function handlequeue() {
 
     if (key == "s") {
       nuevaposicion = posicion + Math.sqrt(mapaColor.length);
-      console.log(posicion);
-      console.log(mapaColor.length);
-      console.log(nuevaposicion);
       if (nuevaposicion >= mapaColor.length) {
         aux =
           posicion -
